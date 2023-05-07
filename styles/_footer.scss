@@ -1,0 +1,152 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px 0 58px;
+    background-color: #000;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        line-height: 0;
+
+        &-img {
+            max-width: 133px;
+            max-height: 66px;
+        }
+    }
+
+    &__tel {
+        line-height: 0;
+        display: flex;
+        padding: 0 30px;
+    }
+
+    &__phone {
+        position: relative;
+        line-height: 1.2;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social {
+        display: flex;
+
+        &-item {
+            line-height: 0;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    &__social-link {
+        display: block;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__address {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__address-list {
+        display: flex;
+    }
+    
+    &__address-link {
+        padding: 0 30px;
+    }
+
+    &__address-map {
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 0;
+            bottom: -2px;
+            left: 0;
+            background-color: #fff;
+            transition: .3s;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .footer__address-link {
+        padding: 0 10px;
+    }
+
+    .footer__address-list {
+        padding-left: 20px;
+    }
+
+    .footer__phone {
+        font-size: 10px;
+    }
+
+    .footer__tel {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 980px) {
+    .footer__phone {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__phone {
+        display: none;
+    }
+
+    .footer__address-link {
+        padding: 0 10px;
+    }
+
+    footer__address-map {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer__address {
+        display: none;
+    }
+}

@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nano Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 1);
+    min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+}
+
+ul, ol {
+    padding: o;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+
+.wrapper {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+
+.georgian {
+    color: #B82121;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+}

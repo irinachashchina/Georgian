@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    border: 1px solid #B82121;
+    background-color:  #B82121;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 21px 49px 20px;
+    text-align: center;
+    transition: .3s;
+
+    &--sm {
+        padding: 21px 34px 20px 35px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border-color: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn--sm {
+        display: none;
+    }
+}

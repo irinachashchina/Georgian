@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Nano Sans';
+    src: url('FileName.eot');
+    src: url('./fonts/NotoSans.woff') format('woff'),
+         url('./fonts/NotoSans.woff2') format('woff2');
+    font-style: 400;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nano Sans';
+    src: url('FileName.eot');
+    src: url('./fonts/NotoSans-Bold.woff') format('woff'),
+         url('./fonts/NotoSans-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
